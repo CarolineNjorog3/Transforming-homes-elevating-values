@@ -1,4 +1,4 @@
-![Alt Text](Images/kings.PNG)
+![Local Image](kings.PNG)
  
 <h1 style="font-size: 18px;">RenoStrategix: Transforming Homes, Elevating Values</h1>
      
