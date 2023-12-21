@@ -2,14 +2,14 @@
  
 <h1 style="font-size: 40px;">RenoStrategix: Transforming Homes, Elevating Values</h1>
      
-<h1 style="font-size: 14px;">Authors</h1>
+<p style="font-weight: bold;,font-size: 14px;">Authors</p>
 
--Caroline Njeri.  
--Amadi Growman. 
--Lynns Waswa. 
--Robert Gesembe. 
--David Kirianja. 
--James Nyamu. 
+Caroline Njeri.  
+Amadi Growman.  
+Lynns Waswa.   
+Robert Gesembe.   
+David Kirianja.   
+James Nyamu.   
 
 <h1 style="font-size: 18px;">Business Overview:</h1>
 
@@ -23,19 +23,19 @@ In the vibrant landscape of King County, CasaCrafters endeavors to create a narr
 
 Through the journey of Alex's home transformation, CasaCrafters navigates the complex realm of real estate, uncovering insights that go beyond the expected. The story unfolds as Alex learns about the potential return on investment for various renovations, transforming not just the home but the overall real estate experience.
 
-<h1 style="font-size: 14px;">Objective 1: Identify Key Features Impacting Property Values</h1>
+<p style="font-weight: bold;,font-size: 14px;">Objective 1: Identify Key Features Impacting Property Values</p>
 
 **Objective:** Develop a multiple linear regression model to identify and quantify the influence of various features (e.g., square footage, number of bedrooms, location) on the sale prices of houses in King County.
 
 **Rationale:** Understanding the key features that significantly affect property values is crucial for providing targeted recommendations to homeowners. By analyzing historical sales data, the model will reveal which features have the most substantial impact on sale prices. This information will empower CasaCrafters to guide homeowners on prioritizing renovations that are likely to yield the highest returns.
 
-<h1 style="font-size: 14px;">Objective 2: Build a Predictive Model for Property Valuation</h1>
+<p style="font-weight: bold;,font-size: 14px;">Objective 2: Build a Predictive Model for Property Valuation</p>
 
 **Objective:** Construct a robust multiple linear regression model that accurately predicts house sale prices based on selected features, allowing for personalized property valuation.
 
 **Rationale:**  The predictive model will serve as a valuable tool for CasaCrafters to estimate the potential impact of specific renovations on a property's value. By inputting proposed changes into the model, homeowners can receive personalized predictions of how these renovations might affect the sale price. This enables informed decision-making and helps homeowners focus on improvements that align with their goals while maximizing return on investment.
 
-<h1 style="font-size: 14px;">Objective 3: Provide Renovation Recommendations for Maximum ROI</h1>
+<p style="font-weight: bold;,font-size: 14px;">Objective 3: Provide Renovation Recommendations for Maximum ROI</p>
 
 **Objective:** Utilize the developed multiple linear regression model to generate personalized recommendations for homeowners, suggesting specific renovations that are predicted to have the highest positive impact on property values.
 
