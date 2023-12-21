@@ -1,4 +1,6 @@
-![Local Image](kings.PNG)
+<p align="center">
+  <img src="kings.PNG" alt="Sample Image">
+</p>
  
 <h1 style="font-size: 18px;">RenoStrategix: Transforming Homes, Elevating Values</h1>
      
