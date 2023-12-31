@@ -51,7 +51,7 @@ The first task to read the data file into our working environment then explore i
 
 This involved the following activities;
 
-• Checking the shape of the dataset.
+• Checking the shape of the dataset.  
 • Inspecting the properties of the dataset.  
 • Understanding the description of the dataset.   
 • Sampling the 1st 5 rows of the dataset.   
@@ -94,7 +94,7 @@ Using Pearson correlation in pandas, we obtained the correlation matrix for all 
 
 Base on our intuition we selected the most influential features as identified from the correlation analysis. there were
 
-• 'sqft_living' column 
+• 'sqft_living'   
 • 'sqft_above'  
 • 'sqft_living15'   
 • 'bathrooms'  
