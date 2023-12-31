@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="kings.PNG" alt="Sample Image">
+  <img src="images/kings.PNG" alt="Sample Image">
 </p>
  
 <h1 style="font-size: 18px;">RenoStrategix: Transforming Homes, Elevating Values</h1>
@@ -75,7 +75,7 @@ We check for outliers in the price column using inter quatile range method and p
 These are that variables that represent categories or groups. Unlike numerical variables, which can take on numerical values with a meaningful order, categorical variables consist of discrete categories or labels in this case they were represented in the 'waterfront', 'view', 'condition', and 'grade' columns. Below are some of the visuals of the categorical data
 
 <p align="center">
-  <img src="Categorical variables.png" alt="Sample Image">
+  <img src="images/Categorical variables.png" alt="Sample Image">
 </p>
 
 <h2 style="font-size: 18px;">Feature Selection</h2> 
@@ -85,7 +85,7 @@ These are that variables that represent categories or groups. Unlike numerical v
 Using Pearson correlation in pandas, we obtained the correlation matrix for all the numerical columns in the dataset. Below is a reporesentation of the correletion in the correlation matrix;
 
 <p align="center">
-  <img src="Correlation matrix of the numericals.png" alt="Sample Image">
+  <img src="images/Correlation matrix of the numericals.png" alt="Sample Image">
 </p>
 
 <h2 style="font-size: 18px;">Model Building</h2>
@@ -109,7 +109,7 @@ We split the data into training and testing sets then trained the multiple linea
 Our  Mean Squared Error (MSE) is 58286402686.6614 and it provides the measure of the average squared difference between the predicted and actual prices in the test set. Our R-squared is 0.5523877457112082 indicating the proportion of variance in house prices that can be explained by the selected features. **NOTE**;An R-squared value closer to 1 suggests a better fit of the model to the data. Below is the scarter plot of the predicted and the actual values
 
 <p align="center">
-  <img src="Actual Vs Predicted Prices.png" alt="Sample Image">
+  <img src="images/Actual Vs Predicted Prices.png" alt="Sample Image">
 </p>
 
 <h2 style="font-size: 18px;">Model Evaluation</h2>
@@ -119,7 +119,7 @@ Our  Mean Squared Error (MSE) is 58286402686.6614 and it provides the measure of
 We used the mean squared Error to assess the model. This metric (MSE) measures the average absolute difference between the predicted and actual values. It provides a measure of the average magnitude of errors in the model's predictions. Below is the visual reprecentation of the model coefficients
 
 <p align="center">
-  <img src="Coefficients visuals.png" alt="Sample Image">
+  <img src="images/Coefficients visuals.png" alt="Sample Image">
 </p>
 
 Coefficients: The coefficients represent the weights assigned to each feature in the linear regression model. Positive coefficients indicate a positive correlation with the target variable, while negative coefficients indicate a negative correlation. The intercept represents the estimated value of the target variable when all features are zero.
@@ -134,7 +134,7 @@ We Identified features that can be changed through renovations and their coeffic
 The image below shows how the respective features are important
 
 <p align="center">
-  <img src="Importance of the features.png" alt="Sample Image">
+  <img src="images/Importance of the features.png" alt="Sample Image">
 </p>
 
 • Sqft_living has the highest importance score, indicating that changes in living area square footage are most likely to impact the house price.
