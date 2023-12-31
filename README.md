@@ -6,12 +6,12 @@
      
 ### <span style="font-size: 18px; font-weight: bold;">Authors</span>
 
-Caroline Njeri.  
-Amadi Growman.  
-Lynns Waswa.   
-Robert Gesembe.   
-David Kirianja.   
-James Nyamu.   
+• Caroline Njeri.  
+• Amadi Growman.  
+• Lynns Waswa.   
+• Robert Gesembe.   
+• David Kirianja.   
+• James Nyamu.   
 
 <h2 style="font-size: 18px;">Business Overview:</h2>
 
@@ -51,10 +51,10 @@ The first task to read the data file into our working environment then explore i
 
 This involved the following activities;
 
-Check the shape of the dataset.  
-Inspect the properties of the dataset.  
-understanding the description of the dataset.   
-sampling the 1st 5 rows of the dataset.   
+• Checking the shape of the dataset.
+• Inspecting the properties of the dataset.  
+• Understanding the description of the dataset.   
+• Sampling the 1st 5 rows of the dataset.   
 
 <h2 style="font-size: 18px;">Data Cleaning</h2>
 
@@ -72,13 +72,15 @@ We check for outliers in the price column using inter quatile range method and p
 
 <h2 style="font-size: 18px;">Categorical Variables</h2>
 
-these are that variables that represent categories or groups. Unlike numerical variables, which can take on numerical values with a meaningful order, categorical variables consist of discrete categories or labels in this case they were represented in the 'waterfront', 'view', 'condition', and 'grade' columns. Below are some of the visuals of the categorical data
+These are that variables that represent categories or groups. Unlike numerical variables, which can take on numerical values with a meaningful order, categorical variables consist of discrete categories or labels in this case they were represented in the 'waterfront', 'view', 'condition', and 'grade' columns. Below are some of the visuals of the categorical data
 
 <p align="center">
   <img src="Categorical variables.png" alt="Sample Image">
 </p>
 
-<h2 style="font-size: 18px;">Feature Selection</h2> **:Identifying the most influential features through analysis and correlation**
+<h2 style="font-size: 18px;">Feature Selection</h2> 
+
+#### Identifying the most influential features through analysis and correlation**
 
 Using Pearson correlation in pandas, we obtained the correlation matrix for all the numerical columns in the dataset. Below is a reporesentation of the correletion in the correlation matrix;
 
@@ -86,19 +88,21 @@ Using Pearson correlation in pandas, we obtained the correlation matrix for all 
   <img src="Correlation matrix of the numericals.png" alt="Sample Image">
 </p>
 
-<h2 style="font-size: 18px;">Model Building</h2>**: Train a multiple linear regression model using the selected features.**
+<h2 style="font-size: 18px;">Model Building</h2>
+
+#### Train a multiple linear regression model using the selected features.**
 
 Base on our intuition we selected the most influential features as identified from the correlation analysis. there were
 
-'sqft_living'  
-'sqft_above'  
-'sqft_living15'   
-'bathrooms'  
-'grade_11 Excellent'  
-'view_NONE'  
-'grade_10 Very Good'  
-'grade_7 Average'  
-'bedrooms'  
+• 'sqft_living' column 
+• 'sqft_above'  
+• 'sqft_living15'   
+• 'bathrooms'  
+• 'grade_11 Excellent'  
+• 'view_NONE'  
+• 'grade_10 Very Good'  
+• 'grade_7 Average'  
+• 'bedrooms'  
 
 We split the data into training and testing sets then trained the multiple linear regration model and tested by Predicting the test results. Lastly we calculated and displayed the performance test matrix(MSE and R-Squared )
 
@@ -108,7 +112,9 @@ Our  Mean Squared Error (MSE) is 58286402686.6614 and it provides the measure of
   <img src="Actual Vs Predicted Prices.png" alt="Sample Image">
 </p>
 
-<h2 style="font-size: 18px;">Model Evaluation</h2>**: Assessing the performance of the model and interpretin the coefficients**
+<h2 style="font-size: 18px;">Model Evaluation</h2>
+
+#### Assessing the performance of the model and interpretin the coefficients
 
 We used the mean squared Error to assess the model. This metric (MSE) measures the average absolute difference between the predicted and actual values. It provides a measure of the average magnitude of errors in the model's predictions. Below is the visual reprecentation of the model coefficients
 
@@ -119,7 +125,9 @@ We used the mean squared Error to assess the model. This metric (MSE) measures t
 Coefficients: The coefficients represent the weights assigned to each feature in the linear regression model. Positive coefficients indicate a positive correlation with the target variable, while negative coefficients indicate a negative correlation. The intercept represents the estimated value of the target variable when all features are zero.
 
 
-<h2 style="font-size: 18px;">Recommendation System</h2>**: Developing a system to recommend specific renovations based on their predicted impact on house prices.**
+<h2 style="font-size: 18px;">Recommendation System</h2>
+
+#### Developing a system to recommend specific renovations based on their predicted impact on house prices
 
 We Identified features that can be changed through renovations and their coefficients and created a dataFrame provides insights into the linear regression model's predictions regarding how changes in certain features related to renovations might impact the house price. The coefficients represent the estimated change in the price for a one-unit increase in each respective feature
 
@@ -129,9 +137,9 @@ The image below shows how the respective features are important
   <img src="Importance of the features.png" alt="Sample Image">
 </p>
 
-1. Sqft_living has the highest importance score, indicating that changes in living area square footage are most likely to impact the house price.
-2. Sqft_above, the square footage above the ground level, has a smaller importance score.
-3. Bathrooms have an extremely low importance score, suggesting that they have a negligible impact on the house price within this model.
+• Sqft_living has the highest importance score, indicating that changes in living area square footage are most likely to impact the house price.
+• Sqft_above, the square footage above the ground level, has a smaller importance score.
+• Bathrooms have an extremely low importance score, suggesting that they have a negligible impact on the house price within this model.
 
 Based on these results, a recommendation system for renovations could prioritize increasing the living area square footage (sqft_living) as it is likely to yield the highest return on investment in terms of increasing house prices.The bar chart clearly shows the relative importance of each feature, with sqft_living standing out as the most influential factor for house price predictions in this model
 
@@ -139,28 +147,28 @@ Based on these results, a recommendation system for renovations could prioritize
 
 Based on the model insights, here is clear and actionable advice for homeowners considering renovations to increase their house's value:
 
-**Maximize Living Space:** Expanding the living space is a key strategy for maximizing the house's value. Consider options like room additions, finishing basements, or creating open floor plans.
+• **Maximize Living Space:** Expanding the living space is a key strategy for maximizing the house's value. Consider options like room additions, finishing basements, or creating open floor plans.
 
-**Strategic Bathroom Additions:** Strategically adding bathrooms can be a valuable investment. Evaluate the existing layout and identify spaces where an additional bathroom could enhance convenience and appeal.
+• **Strategic Bathroom Additions:** Strategically adding bathrooms can be a valuable investment. Evaluate the existing layout and identify spaces where an additional bathroom could enhance convenience and appeal.
 
-**Grade Upgrades:** Upgrading the house grade, especially to 'Excellent,' can significantly increase the property's market value. Explore ways to enhance the quality of materials and finishes in your home.
+• **Grade Upgrades:** Upgrading the house grade, especially to 'Excellent,' can significantly increase the property's market value. Explore ways to enhance the quality of materials and finishes in your home.
 
-**Avoid Downgrades:** Downgrading to an 'Average' grade is associated with a predicted decrease in house price. Prioritize renovations that elevate or maintain the current grade.
+• **Avoid Downgrades:** Downgrading to an 'Average' grade is associated with a predicted decrease in house price. Prioritize renovations that elevate or maintain the current grade.
 
-**Continuous Monitoring:** Regularly monitor real estate trends and revisit your property's value estimation. Housing markets evolve, and periodic assessments help in making informed decisions about future renovations or selling strategies.
+• **Continuous Monitoring:** Regularly monitor real estate trends and revisit your property's value estimation. Housing markets evolve, and periodic assessments help in making informed decisions about future renovations or selling strategies.
 
 
 <h2 style="font-size: 18px;">Next Steps</h2>
 
-**Consult with Professionals:** Engage with local real estate professionals and renovation experts to get personalized advice based on the specific real estate market and property conditions in your area.
+• **Consult with Professionals:** Engage with local real estate professionals and renovation experts to get personalized advice based on the specific real estate market and property conditions in your area.
 
-**Budget Considerations:** Evaluate the potential return on investment for each suggested renovation in relation to your budget. Prioritize renovations that align with your financial capacity and long-term goals.
+• **Budget Considerations:** Evaluate the potential return on investment for each suggested renovation in relation to your budget. Prioritize renovations that align with your financial capacity and long-term goals.
 
-**Local Market Dynamics:** Understand the dynamics of the local real estate market. Market conditions, neighborhood trends, and buyer preferences can influence the impact of renovations on property value.
+• **Local Market Dynamics:** Understand the dynamics of the local real estate market. Market conditions, neighborhood trends, and buyer preferences can influence the impact of renovations on property value.
 
-**Quality Over Quantity:** Focus on quality renovations rather than sheer quantity. Strategic improvements that enhance functionality and aesthetics are likely to yield better returns.
+• **Quality Over Quantity:** Focus on quality renovations rather than sheer quantity. Strategic improvements that enhance functionality and aesthetics are likely to yield better returns.
 
-**Holistic Approach:** Consider a holistic approach to renovations. While specific features like square footage and bathrooms are impactful, the overall appeal of the property, including curb appeal and energy efficiency, also contributes to its market value.
+• **Holistic Approach:** Consider a holistic approach to renovations. While specific features like square footage and bathrooms are impactful, the overall appeal of the property, including curb appeal and energy efficiency, also contributes to its market value.
 
 
 <h1 style="font-size: 18px;">Group 6 Contact Information</h1>
