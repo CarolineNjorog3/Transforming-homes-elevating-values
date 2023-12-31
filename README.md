@@ -70,6 +70,10 @@ We then checked for the data type for all the columns in the data frame and chan
 
 We check for outliers in the price column using inter quatile range method and ploted a boxplot method. we isentied that the Number of outliers in the price column are 1153 with Lower bound for outliers being -162500.0 and the Upper bound being 1129500.0.
 
+<p align="center">
+  <img src="images/Outlier chat.png" alt="Sample Image">
+</p>
+
 <h2 style="font-size: 18px;">Categorical Variables</h2>
 
 These are that variables that represent categories or groups. Unlike numerical variables, which can take on numerical values with a meaningful order, categorical variables consist of discrete categories or labels in this case they were represented in the 'waterfront', 'view', 'condition', and 'grade' columns. Below are some of the visuals of the categorical data
