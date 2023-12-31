@@ -137,8 +137,8 @@ The image below shows how the respective features are important
   <img src="images/Importance of the features.png" alt="Sample Image">
 </p>
 
-• Sqft_living has the highest importance score, indicating that changes in living area square footage are most likely to impact the house price.
-• Sqft_above, the square footage above the ground level, has a smaller importance score.
+• Sqft_living has the highest importance score, indicating that changes in living area square footage are most likely to impact the house price.    
+• Sqft_above, the square footage above the ground level, has a smaller importance score.      
 • Bathrooms have an extremely low importance score, suggesting that they have a negligible impact on the house price within this model.
 
 Based on these results, a recommendation system for renovations could prioritize increasing the living area square footage (sqft_living) as it is likely to yield the highest return on investment in terms of increasing house prices.The bar chart clearly shows the relative importance of each feature, with sqft_living standing out as the most influential factor for house price predictions in this model
