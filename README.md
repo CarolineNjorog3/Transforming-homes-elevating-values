@@ -58,17 +58,17 @@ This involved the following activities;
 
 <h2 style="font-size: 18px;">Data Cleaning</h2>
 
-We first checked for the total number of null values under all the columns. This allowed us to identify which values to replace considering the percentage of the missing value in comparison to the length of the respective columns and to come up with assumtions before replacing the missing values. Only 4 colums had missing values based on our assessment. We replaced the missing values under waterfront with a "NO" with an assumption that that the datapoints where there was a NaN value represented houses that lacked a waterfront.
+We first checked for the total number of null values under all the columns. This allowed us to identify which values to replace considering the percentage of the missing value in comparison to the length of the respective columns and to come up with assumptions before replacing the missing values. Only 4 columns had missing values based on our assessment. We replaced the missing values under waterfront with a "NO" with an assumption that that the datapoints where there was a NaN value represented houses that lacked a waterfront.
 
-We also replaced the missing values in the year renovated with the respective values in the year built taking into account an assumption that the houses that are missing values in the column year_renovated have never been renovated since they were built. The basment column had "?" that represented missing information and for this we replaced them with a no with an assumption that these houses have no basements.
+We also replaced the missing values in the year renovated with the respective values in the year built taking into account an assumption that the houses that are missing values in the column year renovated have never been renovated since they were built. The basement column had "?" that represented missing information and for this we replaced them with a no with an assumption that these houses have no basements.
 
 After replacing the missing values we checked again for missing values to verify that all the missing values were taken care of. We also created a new column(years_since_renovation) from the difference in the number of years between year_built and year_renovated to get the number of years it took for the respective houses to be renovated. 
 
-We then checked for the data type for all the columns in the data frame and changed 'year_built','year_renovated'and 'Years_Since_Renovation' to interger values and changed the date column data type to datetime
+We then checked for the data type for all the columns in the data frame and changed 'year_built','year_renovated'and 'Years_Since_Renovation' to integer values and changed the date column data type to datetime
 
 <h2 style="font-size: 18px;">Outlier Detection</h2>
 
-We check for outliers in the price column using inter quatile range method and ploted a boxplot method. we isentied that the Number of outliers in the price column are 1153 with Lower bound for outliers being -162500.0 and the Upper bound being 1129500.0.
+We check for outliers in the price column using inter quartile range method and plotted a boxplot method. We iassessed that the Number of outliers in the price column are 1153 with Lower bound for outliers being -162500.0 and the Upper bound being 1129500.0.
 
 <p align="center">
   <img src="images/Outlier chat.png" alt="Sample Image">
@@ -86,7 +86,7 @@ These are that variables that represent categories or groups. Unlike numerical v
 
 #### Identifying the most influential features through analysis and correlation**
 
-Using Pearson correlation in pandas, we obtained the correlation matrix for all the numerical columns in the dataset. Below is a reporesentation of the correletion in the correlation matrix;
+Using Pearson correlation in pandas, we obtained the correlation matrix for all the numerical columns in the dataset. Below is a representation of the correlation in the correlation matrix;
 
 <p align="center">
   <img src="images/Correlation matrix of the numericals.png" alt="Sample Image">
@@ -108,9 +108,9 @@ Base on our intuition we selected the most influential features as identified fr
 • 'grade_7 Average'  
 • 'bedrooms'  
 
-We split the data into training and testing sets then trained the multiple linear regration model and tested by Predicting the test results. Lastly we calculated and displayed the performance test matrix(MSE and R-Squared )
+We split the data into training and testing sets then trained the multiple linear regression model and tested by Predicting the test results. Lastly we calculated and displayed the performance test matrix(MSE and R-Squared )
 
-Our  Mean Squared Error (MSE) is 58286402686.6614 and it provides the measure of the average squared difference between the predicted and actual prices in the test set. Our R-squared is 0.5523877457112082 indicating the proportion of variance in house prices that can be explained by the selected features. **NOTE**;An R-squared value closer to 1 suggests a better fit of the model to the data. Below is the scarter plot of the predicted and the actual values
+Our  Mean Squared Error (MSE) is 58286402686.6614 and it provides the measure of the average squared difference between the predicted and actual prices in the test set. Our R-squared is 0.5523877457112082 indicating the proportion of variance in house prices that can be explained by the selected features. **NOTE**;An R-squared value closer to 1 suggests a better fit of the model to the data. Below is the scatter plot of the predicted and the actual values
 
 <p align="center">
   <img src="images/Actual Vs Predicted Prices.png" alt="Sample Image">
@@ -118,9 +118,9 @@ Our  Mean Squared Error (MSE) is 58286402686.6614 and it provides the measure of
 
 <h2 style="font-size: 18px;">Model Evaluation</h2>
 
-#### Assessing the performance of the model and interpretin the coefficients
+#### Assessing the performance of the model and interpreting the coefficients
 
-We used the mean squared Error to assess the model. This metric (MSE) measures the average absolute difference between the predicted and actual values. It provides a measure of the average magnitude of errors in the model's predictions. Below is the visual reprecentation of the model coefficients
+We used the mean squared Error to assess the model. This metric (MSE) measures the average absolute difference between the predicted and actual values. It provides a measure of the average magnitude of errors in the model's predictions. Below is the visual representation of the model coefficients
 
 <p align="center">
   <img src="images/Coefficients visuals.png" alt="Sample Image">
@@ -133,7 +133,7 @@ Coefficients: The coefficients represent the weights assigned to each feature in
 
 #### Developing a system to recommend specific renovations based on their predicted impact on house prices
 
-We Identified features that can be changed through renovations and their coefficients and created a dataFrame provides insights into the linear regression model's predictions regarding how changes in certain features related to renovations might impact the house price. The coefficients represent the estimated change in the price for a one-unit increase in each respective feature
+We Identified features that can be changed through renovations and their coefficients and created a data frame provides insights into the linear regression model's predictions regarding how changes in certain features related to renovations might impact the house price. The coefficients represent the estimated change in the price for a one-unit increase in each respective feature
 
 The image below shows how the respective features are important
 
@@ -145,7 +145,7 @@ The image below shows how the respective features are important
 • Sqft_above, the square footage above the ground level, has a smaller importance score.      
 • Bathrooms have an extremely low importance score, suggesting that they have a negligible impact on the house price within this model.
 
-Based on these results, a recommendation system for renovations could prioritize increasing the living area square footage (sqft_living) as it is likely to yield the highest return on investment in terms of increasing house prices.The bar chart clearly shows the relative importance of each feature, with sqft_living standing out as the most influential factor for house price predictions in this model
+Based on these results, a recommendation system for renovations could prioritize increasing the living area square footage (sqft_living) as it is likely to yield the highest return on investment in terms of increasing house prices. The bar chart clearly shows the relative importance of each feature, with sqft_living standing out as the most influential factor for house price predictions in this model
 
 <h2 style="font-size: 18px;">Recommendation and conclusions</h2>
 
