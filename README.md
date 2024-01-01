@@ -84,7 +84,7 @@ These are that variables that represent categories or groups. Unlike numerical v
 
 <h2 style="font-size: 18px;">Feature Selection</h2> 
 
-#### Identifying the most influential features through analysis and correlation**
+#### Identifying the most influential features through analysis and correlation.
 
 Using Pearson correlation in pandas, we obtained the correlation matrix for all the numerical columns in the dataset. Below is a representation of the correlation in the correlation matrix;
 
@@ -94,7 +94,7 @@ Using Pearson correlation in pandas, we obtained the correlation matrix for all 
 
 <h2 style="font-size: 18px;">Model Building</h2>
 
-#### Train a multiple linear regression model using the selected features.**
+#### Train a multiple linear regression model using the selected features.
 
 Base on our intuition we selected the most influential features as identified from the correlation analysis. there were
 
